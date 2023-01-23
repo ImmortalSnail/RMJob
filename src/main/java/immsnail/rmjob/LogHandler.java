@@ -3,6 +3,10 @@ package immsnail.rmjob;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * This class handles the creation of a logger and has methods for logging
+ * methods of varying degree: info, debug, error, and warn.
+ */
 @SuppressWarnings("unused")
 public class LogHandler {
 
