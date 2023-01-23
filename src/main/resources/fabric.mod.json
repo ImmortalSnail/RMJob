@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "rmjob",
+  "version": "${version}",
+  "name": "Rmjob",
+  "description": "RMJob is a mod which allows render distance to dynamically be set dependent on which biome you are in. Also features other optimizations.",
+  "authors": [
+    "ImmortalSnail",
+    "Notarin",
+    "Terraphice"
+  ],
+  "contact": {
+    "repo": "https://github.com/ImmortalSnail/RMJob/"
+  },
+  "license": "MIT",
+  "icon": "assets/rmjob/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "immsnail.rmjob.client.RmjobClient"
+    ],
+    "main": [
+      "immsnail.rmjob.Rmjob"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.13",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
