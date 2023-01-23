@@ -23,7 +23,9 @@ public class LogHandler {
      * @param string - the message to be logged
      */
     public static void logInfo(String string) {
-        LOGGER.info(string);
+        if (LOGGER.isInfoEnabled()) {
+            LOGGER.info(string);
+        }
     }
 
     /**
@@ -34,7 +36,9 @@ public class LogHandler {
      * @param string - the message to be logged
      */
     public static void logDebug(String string) {
-        LOGGER.debug(string);
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug(string);
+        }
     }
 
     /**
@@ -44,7 +48,9 @@ public class LogHandler {
      * @param string - the message to be logged
      */
     public static void logError(String string) {
-        LOGGER.error(string);
+        if (LOGGER.isErrorEnabled()) {
+            LOGGER.error(string);
+        }
     }
 
     /**
@@ -54,7 +60,9 @@ public class LogHandler {
      * @param string - the message to be logged
      */
     public static void logWarn(String string) {
-        LOGGER.warn(string);
+        if (LOGGER.isWarnEnabled()) {
+            LOGGER.warn(string);
+        }
     }
 
 }
